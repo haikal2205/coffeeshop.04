@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Coffee Shop</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css"/>
+    </h:head>
+    <h:body>
+        <nav>
+            <header class="header">
+            <div id="menu-btn" class="fas fa-bars"></div>
+                <a href="#" class="logo"> coffee <i class="fas fa-mug-hot"></i> </a>
+                <a href="dashboard.xhtml">Data Customer</a>
+                <a href="dataadmin.xhtml">Data Admin</a>
+                <h:form>
+                <h:commandButton class="btn" value="Logout" action="login.xhtml"/><br></br>
+                </h:form>
+            </header>
+        </nav>
+        
+        <center>
+            <h:form>
+                <h:dataTable value="#{tblUser.getAllRecords()}}" var="user">
+                    <h:column>
+                        <f:facet name="header">Id</f:facet>
+                        <h:outputText value="#{user.idUser}"></h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Name</f:facet>
+                        <h:outputText value="#{user.username}"></h:outputText>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">Edit</f:facet>
+                        <h:commandButton value="Edit" action="#{tblCust.editta()}">
+                            <f:param name="action" value="#{customer.byIdcus}"/>
+                        </h:commandButton>
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">Delete</f:facet>
+                        <h:commandButton value="Delete" action="#{tblCust.deleteea()}">
+                            <f:param name="action" value="#{user.byIdUser}"/>
+                        </h:commandButton>
+                    </h:column>
+                </h:dataTable>
+            </h:form>
+        </center>   
+        
+    </h:body>
+</html>
+

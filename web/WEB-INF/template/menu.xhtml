@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Coffee Shop</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <section class="menu" id="menu">
+            <h1 class="heading"> our menu <span>popular menu</span> </h1>
+                <div class="box-container">
+                    <a class="box">
+                        <img src="image/menu-1.png" alt=""/>               
+                            <div class="content">
+                                <h3>Latte</h3>
+                                <p>Espresso with steamed milk</p>
+                                <span>Rp.15.000;</span>
+                            </div>
+                    </a>
+
+                    <a class="box">
+                        <img src="image/menu-2.png" alt=""/>
+                            <div class="content">
+                                <h3>Cappucino</h3>
+                                <p>Espresso with steamed milk foam</p>
+                                <span>Rp.15.000;</span>
+                            </div>
+                    </a>
+
+                    <a class="box">
+                        <img src="image/menu-3.png" alt=""/>
+                            <div class="content">
+                                <h3>Americano</h3>
+                                <p>Espresso with water</p>
+                                <span>Rp.15.000;</span>
+                            </div>
+                    </a>
+
+                    <a class="box">
+                        <img src="image/menu-3.png" alt=""/>
+                            <div class="content">
+                                <h3>Flavour Latte</h3>
+                                <p>Hazelnut, Pandan, Vanilla, and Brown Sugar</p>
+                                <span>Rp.20.000;</span>
+                            </div>
+                    </a>
+
+                    <a class="box">
+                        <img src="image/menu-5.png" alt=""/>
+                            <div class="content">
+                                <h3>Manual Brew</h3>
+                                <p>Manual coffee</p>
+                                <span>Rp.20.000;</span>
+                            </div>
+                    </a>
+
+                    <a class="box">
+                        <img src="image/menu-6.png" alt=""/>
+                            <div class="content">
+                                <h3>Japanese Iced</h3>
+                                <p>Coffee with iced</p>
+                                <span>Rp.20.000;</span>
+                            </div>
+                    </a>
+                </div>
+        </section>
+        
+        <ui:insert name="review">
+            <ui:include src="/WEB-INF/template/book.xhtml"></ui:include>
+        </ui:insert>
+        
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

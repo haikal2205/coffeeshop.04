@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+xmlns:ui="http://java.sun.com/jsf/facelets">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Coffee Shop</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <ui:insert name="navbar">
+            <ui:include src="/WEB-INF/template/navbar.xhtml"></ui:include>
+        </ui:insert>
+        
+        <section class="home" id="home">
+            <div class="row">
+                <div class="content">
+                    <h3>fresh coffee in the morning</h3>
+                </div>
+
+                <div class="image">
+                    <img src="image/home-img-3.png" class="main-home-image" alt=""/>
+                </div>
+            </div>
+
+            <div class="image-slider">
+                <img src="image/home-img-1.png" alt=""/>
+                <img src="image/home-img-2.png" alt=""/>
+                <img src="image/home-img-3.png" alt=""/>
+            </div>
+        </section>
+        
+        <ui:insert name="about">
+            <ui:include src="/WEB-INF/template/about.xhtml"></ui:include>
+        </ui:insert>
+        
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
