@@ -11,23 +11,23 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import pojo.coffeeshopUtil;
-import pojo.TblUser;
+import pojo.TblUser1;
 
 /**
  *
  * @author haikal
  */
-public class DAOuser {
+public class DAOuser1 {
     
-    public List<TblUser> retrveTblUser()
+    public List<TblUser1> retrveTblUser()
     {
         List stud = new ArrayList();
-        TblUser stud1 = new TblUser();
+        TblUser1 stud1 = new TblUser1();
         Transaction trans = null;
         Session session = coffeeshopUtil.getSessionFactory().openSession();
         try{
             trans = session.beginTransaction();
-            Query query = session.createQuery("from TblUser");
+            Query query = session.createQuery("from TblUser1");
             stud = query.list();
             stud.add(stud1.getIdUser());
             stud.add(stud1.getUsername());
@@ -39,9 +39,9 @@ public class DAOuser {
         return stud;
     }
     
-    public List<TblUser>getbyID(String idU){
-        TblUser usr = new TblUser();
-        List<TblUser> iUsr = new ArrayList();
+    public List<TblUser1>getbyID(String idU){
+        TblUser1 usr = new TblUser1();
+        List<TblUser1> iUsr = new ArrayList();
         
         Transaction trans = null;
         Session session = coffeeshopUtil.getSessionFactory().openSession();
@@ -50,7 +50,7 @@ public class DAOuser {
             trans = session.beginTransaction();
             Query query = session.createQuery("from TblUser where id_user = :id");
             query.setString("id", idU);
-            usr = (TblUser) query.uniqueResult();
+            usr = (TblUser1) query.uniqueResult();
             iUsr = query.list();
             trans.commit();
         }catch(Exception e){
@@ -66,7 +66,7 @@ public class DAOuser {
         
         try{
             trans = session.beginTransaction();
-            TblUser usr = (TblUser) session.load(TblUser.class, new Integer(idU));
+            TblUser1 usr = (TblUser1) session.load(TblUser1.class, new Integer(idU));
             session.delete(usr);
             trans.commit();
         }catch(Exception e){
@@ -74,7 +74,7 @@ public class DAOuser {
         }
     }
     
-    public void editUser(TblUser usr)
+    public void editUser(TblUser1 usr)
     {
         Transaction trans = null;
         Session session = coffeeshopUtil.getSessionFactory().openSession();
@@ -88,7 +88,7 @@ public class DAOuser {
         }
     }
     
-    public void resetUser(TblUser usr)
+    public void resetUser(TblUser1 usr)
    {
        Transaction trans = null;
        Session session = coffeeshopUtil.getSessionFactory().openSession();

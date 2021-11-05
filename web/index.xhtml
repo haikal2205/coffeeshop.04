@@ -2,6 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
      xmlns:ui="http://java.sun.com/jsf/facelets">
     <h:head>
         <meta charset="UTF-8"/>
@@ -15,20 +16,47 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 
         <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/login.css"/>
         <link rel="stylesheet" href="css/style.css"/>
     </h:head>
     <h:body>
-        <ui:composition 
-            xmlns="http://www.w3.org/1999/xhtml"
-            xmlns:h="http://java.sun.com/jsf/html"
-            xmlns:ui="http://java.sun.com/jsf/facelets"
-            template="WEB-INF/template/home.xhtml">
-        </ui:composition>
-        
-        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <nav>
+            <header class="header">
+            <div id="menu-btn" class="fas fa-bars"></div>
+                <a href="#" class="logo"> coffee <i class="fas fa-mug-hot"></i> </a>
+            </header>
+        </nav>
+        <center>
+        <h:form class="lg-bd">
+            <div class="login">
+                <h1 class="heading"> Login <span>Login Customer</span> </h1><br></br>
+                    <div class="input-group">
+                        <h:inputText class="input_text" a:placeholder="Username" value="#{tblUser.username}"/><br/>
+                        <span>Username</span>
+                    </div>
 
-        <!-- custom js file link  -->
-        <script src="js/script.js"></script>
+                    <div class="input-group">
+                        <h:inputSecret class="input_text" a:placeholder="Password" value="#{tblUser.password}"/><br/><br/>
+                        <span>Password</span>
+                    </div>
+
+                    <div class="input-group">
+                        <h:commandButton class="button_log" value="Login" action="#{tblUser.login_user()}"/><br></br>
+                    </div>
+                
+                    <div class="input-group">
+                        <a href="faces/login.xhtml" class="button_log">Login Admin</a><br></br>
+                    </div>
+                
+                    <div class="input-group">
+                        <a href="faces/registrasi.xhtml" class="button_log">Sign Up</a>
+                    </div>
+            </div>
+        </h:form>
+            <br/>
+            <br/>
+            <div class="credit"> Copy : 2021 <span>Coffee Shop</span> | All Rights Reserved, I.N.A </div>
+    </center>
     </h:body>
 </html>
 

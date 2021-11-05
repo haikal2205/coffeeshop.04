@@ -55,7 +55,7 @@ Contributor(s):
         <property name="email" type="string">
             <column name="email_cust" length="100" not-null="true" />
         </property>
-        <property name="noTlpn" type="int">
+        <property name="noTlpn" type="string">
             <column name="no_cust" length="15" not-null="true" />
         </property>
         <property name="book" type="string">

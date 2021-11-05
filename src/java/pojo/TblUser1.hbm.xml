@@ -44,7 +44,7 @@ Contributor(s):
   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="pojo.TblUser" table="tbl_user" catalog="coffeeshop" optimistic-lock="version">
+    <class name="pojo.TblUser1" table="tbl_user" catalog="coffeeshop" optimistic-lock="version">
         <id name="idUser" type="java.lang.Integer">
             <column name="id_user" />
             <generator class="identity" />

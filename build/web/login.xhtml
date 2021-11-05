@@ -31,17 +31,21 @@
             <div class="login">
                 <h1 class="heading"> Login <span>Login</span> </h1>
                     <div class="input-group">
-                        <h:inputText class="input_text" a:placeholder="Username" value="#{tblUser.username}"/><br/>
+                        <h:inputText class="input_text" a:placeholder="Username" value="#{tblUser1.username}"/><br/>
                         <span>Username</span>
                     </div>
 
                     <div class="input-group">
-                        <h:inputSecret class="input_text" a:placeholder="Password" value="#{tblUser.password}"/><br/><br/>
+                        <h:inputSecret class="input_text" a:placeholder="Password" value="#{tblUser1.password}"/><br/><br/>
                         <span>Password</span>
                     </div>
 
                     <div class="input-group">
-                        <h:commandButton class="button_log" value="Login" action="#{tblUser.login_user()}"/><br></br>
+                        <h:commandButton class="button_log" value="Login" action="#{tblUser1.log_us()}"/><br></br>
+                    </div>
+                
+                    <div class="input-group">
+                        <a href="index.xhtml" class="button_log">Login Customer</a>
                     </div>
             </div>
         </h:form>

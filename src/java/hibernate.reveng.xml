@@ -43,4 +43,6 @@ Contributor(s):
   <schema-selection match-catalog="coffeeshop"/>
   <table-filter match-name="tbl_cust"/>
   <table-filter match-name="tbl_user"/>
+  <table-filter match-name="tbl_user1"/>
+  <table-filter match-name="tbl_user2"/>
 </hibernate-reverse-engineering>

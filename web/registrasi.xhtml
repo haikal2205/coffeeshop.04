@@ -29,23 +29,32 @@
         <center>
         <h:form class="lg-bd">
             <div class="login">
-                <h1 class="heading"> Login <span>Login</span> </h1>
+                <h1 class="heading"> Sign Up <span>Sign Up</span> </h1><br></br>
                     <div class="input-group">
-                        <h:inputText class="input_text" a:placeholder="Username" value="#{tblUser1.username}"/><br/>
+                        <h:inputText class="input_text" a:placeholder="Username" value="#{tblUser2.username}"/><br/>
                         <span>Username</span>
+                    </div>
+                
+                    <div class="input-group">
+                        <h:inputText class="input_text" a:placeholder="Email" value="#{tblUser2.email}"/><br/>
+                        <span>Email</span>
                     </div>
 
                     <div class="input-group">
-                        <h:inputSecret class="input_text" a:placeholder="Password" value="#{tblUser1.password}"/><br/><br/>
+                        <h:inputSecret class="input_text" a:placeholder="Password" value="#{tblUser2.password}"/><br/><br/>
                         <span>Password</span>
                     </div>
 
                     <div class="input-group">
-                        <h:commandButton class="button_log" value="Login" action="#{tblUser1.log_us()}"/><br></br>
+                        <h:commandButton class="button_log" value="SignUp" action="#{tblUser2.save_user()}"/><br></br>
                     </div>
                 
                     <div class="input-group">
-                        <a href="index.xhtml" class="button_log">Login Customer</a>
+                        <a href="faces/login.xhtml" class="button_log">Login Admin</a><br></br>
+                    </div>
+                
+                    <div class="input-group">
+                        <a href="faces/index.xhtml" class="button_log">Login Customer</a>
                     </div>
             </div>
         </h:form>

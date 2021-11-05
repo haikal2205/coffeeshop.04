@@ -15,7 +15,7 @@ import pojo.TblCust;
 
 /**
  *
- * @author Indri
+ * @author haikal
  */
 public class DAOCustomer {
     public List<TblCust> getBy(String uNcus, String uEmail, String uTlp, String uBook) 

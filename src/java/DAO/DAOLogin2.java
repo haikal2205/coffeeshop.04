@@ -11,27 +11,27 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import pojo.coffeeshopUtil;
-import pojo.TblUser;
+import pojo.TblUser2;
 
 /**
  *
  * @author haikal 
  */
-public class DAOLogin {
-    public List<TblUser>getBy(String uName, String uPass)
+public class DAOLogin2 {
+    public List<TblUser2>getBy(String uName, String uPass)
     {
         Transaction trans = null;
-        TblUser us = new TblUser();
-        List<TblUser> user = new ArrayList();
+        TblUser2 us = new TblUser2();
+        List<TblUser2> user = new ArrayList();
         
         Session session = coffeeshopUtil.getSessionFactory().openSession();
         try{
             trans = session.beginTransaction();
-            Query query = session.createQuery("from TblUser where username=:uName AND password=:uPass");
+            Query query = session.createQuery("from TblUser2 where username=:uName AND password=:uPass");
             query.setString("uName", uName);
             query.setString("uPass", uPass);
            
-            us = (TblUser) query.uniqueResult();
+            us = (TblUser2) query.uniqueResult();
             user = query.list();
             trans.commit();
         }catch (Exception e){
@@ -40,7 +40,7 @@ public class DAOLogin {
         return user;
     } 
     
-    public void add_user(TblUser user)
+    public void add_user(TblUser2 user)
     {
         Transaction trans = null;
         Session session = coffeeshopUtil.getSessionFactory().openSession();

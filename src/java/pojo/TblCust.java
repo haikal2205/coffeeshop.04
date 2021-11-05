@@ -19,7 +19,7 @@ public class TblCust  implements java.io.Serializable {
      private Integer idCustomer;
      private String nameCust;
      private String email;
-      private Integer noTlpn;
+      private String noTlpn;
      private String book;
 
     public String getNameCust() {
@@ -38,11 +38,11 @@ public class TblCust  implements java.io.Serializable {
         this.email = email;
     }
 
-    public Integer getNoTlpn() {
+    public String getNoTlpn() {
         return noTlpn;
     }
 
-    public void setNoTlpn(Integer noTlpn) {
+    public void setNoTlpn(String noTlpn) {
         this.noTlpn = noTlpn;
     }
 
@@ -89,7 +89,7 @@ public class TblCust  implements java.io.Serializable {
         cus.editCustomer(this);
         nameCust = "";
         email = "";
-        noTlpn = 0;
+        noTlpn = "";
         book = "";
         return "dashboard";
     }
@@ -100,7 +100,7 @@ public class TblCust  implements java.io.Serializable {
         cus.deleteCustomer(idCustomer);
         nameCust = "";
         email = "";
-        noTlpn = 0;
+        noTlpn = "";
         book = "";
         return "dashboard"; 
     } 
@@ -110,7 +110,7 @@ public class TblCust  implements java.io.Serializable {
         cus.resetCustomer(this);
         nameCust = "";
         email = "";
-        noTlpn = 0;
+        noTlpn = "";
         book = "";
         return "dashboard";
     }
@@ -119,7 +119,7 @@ public class TblCust  implements java.io.Serializable {
     public TblCust() {
     }
 
-    public TblCust(String nameCust, String email, Integer noTlpn, String book) {
+    public TblCust(String nameCust, String email, String noTlpn, String book) {
        this.nameCust = nameCust;
        this.email = email;
        this.noTlpn = noTlpn;
