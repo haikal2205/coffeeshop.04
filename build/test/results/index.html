@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-coffeeshop.04">
+              <span class="suite-name border-passed">coffeeshop.04</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-coffeeshop.04">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-coffeeshop.04">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-coffeeshop.04">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-coffeeshop.04">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-coffeeshop.04">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-coffeeshop.04">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-coffeeshop.04">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">43 methods,   43 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-coffeeshop.04" class="hide-methods passed suite-coffeeshop.04"> (hide)</a> <!-- hide-methods passed suite-coffeeshop.04 -->
+                      <a href="#" panel-name="suite-coffeeshop.04" class="show-methods passed suite-coffeeshop.04"> (show)</a> <!-- show-methods passed suite-coffeeshop.04 -->
+                    </span>
+                    <div class="method-list-content passed suite-coffeeshop.04">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testDeleteea">testDeleteea</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testGetAllRecoordss">testGetAllRecoordss</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testGetBook">testGetBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testGetByIdcus">testGetByIdcus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUserTest" hash-for-method="testGetByIdus">testGetByIdus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testGetEmail">testGetEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testGetEmail">testGetEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testGetEmail">testGetEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testGetIdCustomer">testGetIdCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testGetIdUser">testGetIdUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testGetIdUser">testGetIdUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUserTest" hash-for-method="testGetIdUser">testGetIdUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testGetNameCust">testGetNameCust</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testGetNoTlpn">testGetNoTlpn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testGetPassword">testGetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testGetPassword">testGetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUserTest" hash-for-method="testGetPassword">testGetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testGetUsername">testGetUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testGetUsername">testGetUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUserTest" hash-for-method="testGetUsername">testGetUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testLog_us">testLog_us</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testLog_us">testLog_us</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testLogin_user">testLogin_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testLogin_user">testLogin_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUserTest" hash-for-method="testLogin_user">testLogin_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testSave_user">testSave_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testSave_user">testSave_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testSetBook">testSetBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testSetEmail">testSetEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testSetEmail">testSetEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testSetEmail">testSetEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testSetIdCustomer">testSetIdCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testSetIdUser">testSetIdUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testSetIdUser">testSetIdUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUserTest" hash-for-method="testSetIdUser">testSetIdUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testSetNameCust">testSetNameCust</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblCustTest" hash-for-method="testSetNoTlpn">testSetNoTlpn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testSetPassword">testSetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testSetPassword">testSetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUserTest" hash-for-method="testSetPassword">testSetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser1Test" hash-for-method="testSetUsername">testSetUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUser2Test" hash-for-method="testSetUsername">testSetUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-coffeeshop.04" title="pojo.TblUserTest" hash-for-method="testSetUsername">testSetUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-coffeeshop.04 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-coffeeshop.04" class="panel coffeeshop.04">
+          <div class="suite-coffeeshop.04-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pojo.TblUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetByIdus">
+                  </a> <!-- testGetByIdus -->
+                  <span class="method-name">testGetByIdus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetIdUser">
+                  </a> <!-- testGetIdUser -->
+                  <span class="method-name">testGetIdUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPassword">
+                  </a> <!-- testGetPassword -->
+                  <span class="method-name">testGetPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUsername">
+                  </a> <!-- testGetUsername -->
+                  <span class="method-name">testGetUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin_user">
+                  </a> <!-- testLogin_user -->
+                  <span class="method-name">testLogin_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetIdUser">
+                  </a> <!-- testSetIdUser -->
+                  <span class="method-name">testSetIdUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetPassword">
+                  </a> <!-- testSetPassword -->
+                  <span class="method-name">testSetPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetUsername">
+                  </a> <!-- testSetUsername -->
+                  <span class="method-name">testSetUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-coffeeshop.04-class-passed -->
+          <div class="suite-coffeeshop.04-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pojo.TblUser2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetEmail">
+                  </a> <!-- testGetEmail -->
+                  <span class="method-name">testGetEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetIdUser">
+                  </a> <!-- testGetIdUser -->
+                  <span class="method-name">testGetIdUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPassword">
+                  </a> <!-- testGetPassword -->
+                  <span class="method-name">testGetPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUsername">
+                  </a> <!-- testGetUsername -->
+                  <span class="method-name">testGetUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLog_us">
+                  </a> <!-- testLog_us -->
+                  <span class="method-name">testLog_us</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin_user">
+                  </a> <!-- testLogin_user -->
+                  <span class="method-name">testLogin_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSave_user">
+                  </a> <!-- testSave_user -->
+                  <span class="method-name">testSave_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetEmail">
+                  </a> <!-- testSetEmail -->
+                  <span class="method-name">testSetEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetIdUser">
+                  </a> <!-- testSetIdUser -->
+                  <span class="method-name">testSetIdUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetPassword">
+                  </a> <!-- testSetPassword -->
+                  <span class="method-name">testSetPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetUsername">
+                  </a> <!-- testSetUsername -->
+                  <span class="method-name">testSetUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-coffeeshop.04-class-passed -->
+          <div class="suite-coffeeshop.04-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pojo.TblCustTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteea">
+                  </a> <!-- testDeleteea -->
+                  <span class="method-name">testDeleteea</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllRecoordss">
+                  </a> <!-- testGetAllRecoordss -->
+                  <span class="method-name">testGetAllRecoordss</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBook">
+                  </a> <!-- testGetBook -->
+                  <span class="method-name">testGetBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetByIdcus">
+                  </a> <!-- testGetByIdcus -->
+                  <span class="method-name">testGetByIdcus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetEmail">
+                  </a> <!-- testGetEmail -->
+                  <span class="method-name">testGetEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetIdCustomer">
+                  </a> <!-- testGetIdCustomer -->
+                  <span class="method-name">testGetIdCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNameCust">
+                  </a> <!-- testGetNameCust -->
+                  <span class="method-name">testGetNameCust</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNoTlpn">
+                  </a> <!-- testGetNoTlpn -->
+                  <span class="method-name">testGetNoTlpn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetBook">
+                  </a> <!-- testSetBook -->
+                  <span class="method-name">testSetBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetEmail">
+                  </a> <!-- testSetEmail -->
+                  <span class="method-name">testSetEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetIdCustomer">
+                  </a> <!-- testSetIdCustomer -->
+                  <span class="method-name">testSetIdCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetNameCust">
+                  </a> <!-- testSetNameCust -->
+                  <span class="method-name">testSetNameCust</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetNoTlpn">
+                  </a> <!-- testSetNoTlpn -->
+                  <span class="method-name">testSetNoTlpn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-coffeeshop.04-class-passed -->
+          <div class="suite-coffeeshop.04-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pojo.TblUser1Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetEmail">
+                  </a> <!-- testGetEmail -->
+                  <span class="method-name">testGetEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetIdUser">
+                  </a> <!-- testGetIdUser -->
+                  <span class="method-name">testGetIdUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPassword">
+                  </a> <!-- testGetPassword -->
+                  <span class="method-name">testGetPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUsername">
+                  </a> <!-- testGetUsername -->
+                  <span class="method-name">testGetUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLog_us">
+                  </a> <!-- testLog_us -->
+                  <span class="method-name">testLog_us</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin_user">
+                  </a> <!-- testLogin_user -->
+                  <span class="method-name">testLogin_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSave_user">
+                  </a> <!-- testSave_user -->
+                  <span class="method-name">testSave_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetEmail">
+                  </a> <!-- testSetEmail -->
+                  <span class="method-name">testSetEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetIdUser">
+                  </a> <!-- testSetIdUser -->
+                  <span class="method-name">testSetIdUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetPassword">
+                  </a> <!-- testSetPassword -->
+                  <span class="method-name">testSetPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetUsername">
+                  </a> <!-- testSetUsername -->
+                  <span class="method-name">testSetUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-coffeeshop.04-class-passed -->
+        </div> <!-- panel coffeeshop.04 -->
+        <div panel-name="test-xml-coffeeshop.04" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;coffeeshop.04&quot;&gt;
+  &lt;test name=&quot;pojo.TblCustTest&quot; junit=&quot;true&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pojo.TblCustTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- pojo.TblCustTest --&gt;
+  &lt;test name=&quot;pojo.TblUser1Test&quot; junit=&quot;true&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pojo.TblUser1Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- pojo.TblUser1Test --&gt;
+  &lt;test name=&quot;pojo.TblUser2Test&quot; junit=&quot;true&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pojo.TblUser2Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- pojo.TblUser2Test --&gt;
+  &lt;test name=&quot;pojo.TblUserTest&quot; junit=&quot;true&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pojo.TblUserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- pojo.TblUserTest --&gt;
+&lt;/suite&gt; &lt;!-- coffeeshop.04 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-coffeeshop.04" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for coffeeshop.04</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">pojo.TblCustTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">pojo.TblUser1Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">pojo.TblUser2Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">pojo.TblUserTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-coffeeshop.04" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for coffeeshop.04</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-coffeeshop.04" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for coffeeshop.04</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_coffeeshop.04');
+function tableData_coffeeshop.04() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(43);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testGetAllRecoordss')
+data.setCell(0, 2, 'pojo.TblCustTest')
+data.setCell(0, 3, 2007);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSetEmail')
+data.setCell(1, 2, 'pojo.TblUser2Test')
+data.setCell(1, 3, 53);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLogin_user')
+data.setCell(2, 2, 'pojo.TblUserTest')
+data.setCell(2, 3, 26);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLog_us')
+data.setCell(3, 2, 'pojo.TblUser1Test')
+data.setCell(3, 3, 22);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDeleteea')
+data.setCell(4, 2, 'pojo.TblCustTest')
+data.setCell(4, 3, 21);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSave_user')
+data.setCell(5, 2, 'pojo.TblUser1Test')
+data.setCell(5, 3, 21);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLogin_user')
+data.setCell(6, 2, 'pojo.TblUser1Test')
+data.setCell(6, 3, 21);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSave_user')
+data.setCell(7, 2, 'pojo.TblUser2Test')
+data.setCell(7, 3, 21);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testLogin_user')
+data.setCell(8, 2, 'pojo.TblUser2Test')
+data.setCell(8, 3, 14);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLog_us')
+data.setCell(9, 2, 'pojo.TblUser2Test')
+data.setCell(9, 3, 13);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testGetEmail')
+data.setCell(10, 2, 'pojo.TblCustTest')
+data.setCell(10, 3, 10);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testGetIdCustomer')
+data.setCell(11, 2, 'pojo.TblCustTest')
+data.setCell(11, 3, 4);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSetNoTlpn')
+data.setCell(12, 2, 'pojo.TblCustTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSetEmail')
+data.setCell(13, 2, 'pojo.TblCustTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSetPassword')
+data.setCell(14, 2, 'pojo.TblUser2Test')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testSetIdUser')
+data.setCell(15, 2, 'pojo.TblUser2Test')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testGetPassword')
+data.setCell(16, 2, 'pojo.TblUser2Test')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testGetNoTlpn')
+data.setCell(17, 2, 'pojo.TblCustTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testSetIdCustomer')
+data.setCell(18, 2, 'pojo.TblCustTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testGetBook')
+data.setCell(19, 2, 'pojo.TblCustTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testSetBook')
+data.setCell(20, 2, 'pojo.TblCustTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testGetNameCust')
+data.setCell(21, 2, 'pojo.TblCustTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testSetNameCust')
+data.setCell(22, 2, 'pojo.TblCustTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testGetByIdcus')
+data.setCell(23, 2, 'pojo.TblCustTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testGetPassword')
+data.setCell(24, 2, 'pojo.TblUser1Test')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testSetUsername')
+data.setCell(25, 2, 'pojo.TblUser1Test')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testSetPassword')
+data.setCell(26, 2, 'pojo.TblUser1Test')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testSetIdUser')
+data.setCell(27, 2, 'pojo.TblUser1Test')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testGetEmail')
+data.setCell(28, 2, 'pojo.TblUser1Test')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testGetUsername')
+data.setCell(29, 2, 'pojo.TblUser1Test')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testGetIdUser')
+data.setCell(30, 2, 'pojo.TblUser1Test')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testSetEmail')
+data.setCell(31, 2, 'pojo.TblUser1Test')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testSetUsername')
+data.setCell(32, 2, 'pojo.TblUser2Test')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testGetUsername')
+data.setCell(33, 2, 'pojo.TblUser2Test')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testGetIdUser')
+data.setCell(34, 2, 'pojo.TblUser2Test')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testGetEmail')
+data.setCell(35, 2, 'pojo.TblUser2Test')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testGetPassword')
+data.setCell(36, 2, 'pojo.TblUserTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testGetUsername')
+data.setCell(37, 2, 'pojo.TblUserTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testSetPassword')
+data.setCell(38, 2, 'pojo.TblUserTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testSetUsername')
+data.setCell(39, 2, 'pojo.TblUserTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testSetIdUser')
+data.setCell(40, 2, 'pojo.TblUserTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testGetIdUser')
+data.setCell(41, 2, 'pojo.TblUserTest')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testGetByIdus')
+data.setCell(42, 2, 'pojo.TblUserTest')
+data.setCell(42, 3, 0);
+window.suiteTableData['coffeeshop.04']= { tableData: data, tableDiv: 'times-div-coffeeshop.04'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-coffeeshop.04">
+              </div> <!-- times-div-coffeeshop.04 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-coffeeshop.04" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for coffeeshop.04</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-coffeeshop.04" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-coffeeshop.04" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">pojo.TblCustTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetEmail</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetIdCustomer</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetNameCust</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNameCust</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetIdCustomer</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetAllRecoordss</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBook</span>
+                <span class="method-start">2022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetByIdcus</span>
+                <span class="method-start">2023 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetNoTlpn</span>
+                <span class="method-start">2023 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNoTlpn</span>
+                <span class="method-start">2024 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteea</span>
+                <span class="method-start">2024 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetBook</span>
+                <span class="method-start">2045 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetEmail</span>
+                <span class="method-start">2045 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pojo.TblUser1Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSetPassword</span>
+                <span class="method-start">2074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetPassword</span>
+                <span class="method-start">2075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetEmail</span>
+                <span class="method-start">2075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSave_user</span>
+                <span class="method-start">2075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetIdUser</span>
+                <span class="method-start">2097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetUsername</span>
+                <span class="method-start">2097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUsername</span>
+                <span class="method-start">2097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetIdUser</span>
+                <span class="method-start">2119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLog_us</span>
+                <span class="method-start">2120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin_user</span>
+                <span class="method-start">2143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetEmail</span>
+                <span class="method-start">2164 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pojo.TblUser2Test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSetPassword</span>
+                <span class="method-start">2174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetPassword</span>
+                <span class="method-start">2175 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetEmail</span>
+                <span class="method-start">2176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSave_user</span>
+                <span class="method-start">2176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetIdUser</span>
+                <span class="method-start">2197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetUsername</span>
+                <span class="method-start">2198 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUsername</span>
+                <span class="method-start">2198 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetIdUser</span>
+                <span class="method-start">2199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLog_us</span>
+                <span class="method-start">2199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin_user</span>
+                <span class="method-start">2212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetEmail</span>
+                <span class="method-start">2226 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pojo.TblUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSetPassword</span>
+                <span class="method-start">2290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetPassword</span>
+                <span class="method-start">2291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetIdUser</span>
+                <span class="method-start">2291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetByIdus</span>
+                <span class="method-start">2291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSetUsername</span>
+                <span class="method-start">2292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUsername</span>
+                <span class="method-start">2292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetIdUser</span>
+                <span class="method-start">2292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin_user</span>
+                <span class="method-start">2292 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>DAOCustomer.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;coffeeshop.04&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">DAO</a> &gt; <span class="el_source">DAOCustomer.java</span></div><h1>DAOCustomer.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package DAO;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import pojo.coffeeshopUtil;
+import pojo.TblCust;
+
+/**
+ *
+ * @author haikal
+ */
+<span class="fc" id="L20">public class DAOCustomer {</span>
+    public List&lt;TblCust&gt; getBy(String uNcus, String uEmail, String uTlp, String uBook) 
+   {
+<span class="nc" id="L23">       Transaction trans = null;</span>
+<span class="nc" id="L24">       TblCust cs = new TblCust();</span>
+<span class="nc" id="L25">       List&lt;TblCust&gt; customer = new ArrayList();</span>
+       
+<span class="nc" id="L27">       Session session = coffeeshopUtil.getSessionFactory().openSession();</span>
+       try{
+<span class="nc" id="L29">           trans = session.beginTransaction();</span>
+<span class="nc" id="L30">           Query query = session.createQuery(&quot;from TblCust where nameCust=:uNcus AND email=:uEmail AND noTlpn=:uTlp AND book=:uBook&quot;);</span>
+<span class="nc" id="L31">           query.setString(&quot;uNcus&quot;, uNcus);</span>
+<span class="nc" id="L32">           query.setString(&quot;uEmail&quot;, uEmail);</span>
+<span class="nc" id="L33">           query.setString(&quot;uTlp&quot;, uTlp);</span>
+<span class="nc" id="L34">           query.setString(&quot;uBook&quot;, uBook);</span>
+<span class="nc" id="L35">           cs = (TblCust) query.uniqueResult();</span>
+<span class="nc" id="L36">           customer = query.list();</span>
+<span class="nc" id="L37">           trans.commit();</span>
+<span class="nc" id="L38">       } catch (Exception e){</span>
+<span class="nc" id="L39">           System.out.println(e);</span>
+<span class="nc" id="L40">       }</span>
+<span class="nc" id="L41">       return customer;</span>
+   }
+   
+   public void add_product(TblCust customer)
+   {
+<span class="nc" id="L46">       Transaction trans = null;</span>
+<span class="nc" id="L47">       Session session = coffeeshopUtil.getSessionFactory().openSession();</span>
+       try{
+<span class="nc" id="L49">           trans = session.beginTransaction();</span>
+<span class="nc" id="L50">           session.save(customer);</span>
+<span class="nc" id="L51">           trans.commit();</span>
+<span class="nc" id="L52">       }catch(Exception e){</span>
+<span class="nc" id="L53">           System.out.println(e);</span>
+<span class="nc" id="L54">       }</span>
+<span class="nc" id="L55">   }</span>
+   
+   public List&lt;TblCust&gt; retreveTblCust()
+   {
+<span class="fc" id="L59">       List cus = new ArrayList();</span>
+<span class="fc" id="L60">       TblCust cus1 = new TblCust();</span>
+<span class="fc" id="L61">       Transaction trans = null;</span>
+<span class="fc" id="L62">       Session session = coffeeshopUtil.getSessionFactory().openSession();</span>
+       try{
+<span class="fc" id="L64">           trans = session.beginTransaction();</span>
+<span class="fc" id="L65">           Query query = session.createQuery(&quot;from TblCust&quot;);</span>
+<span class="fc" id="L66">           cus = query.list();</span>
+<span class="fc" id="L67">           cus.add(cus1.getIdCustomer());</span>
+<span class="fc" id="L68">           cus.add(cus1.getNameCust());</span>
+<span class="fc" id="L69">           cus.add(cus1.getEmail());</span>
+<span class="fc" id="L70">           cus.add(cus1.getNoTlpn());</span>
+<span class="fc" id="L71">           cus.add(cus1.getBook());</span>
+<span class="fc" id="L72">           trans.commit();</span>
+<span class="nc" id="L73">       }catch(Exception e){</span>
+<span class="nc" id="L74">           System.out.println(e);</span>
+<span class="fc" id="L75">       }</span>
+<span class="fc" id="L76">       return cus;</span>
+   }
+   
+   public List&lt;TblCust&gt; getbyID(String idC)
+   {
+<span class="nc" id="L81">       TblCust cus = new TblCust();</span>
+<span class="nc" id="L82">       List&lt;TblCust&gt; iCus = new ArrayList();</span>
+       
+<span class="nc" id="L84">       Transaction trans = null;</span>
+<span class="nc" id="L85">       Session session = coffeeshopUtil.getSessionFactory().openSession();</span>
+       
+       try{
+<span class="nc" id="L88">           trans = session.beginTransaction();</span>
+<span class="nc" id="L89">           Query query = session.createQuery(&quot;from TblCust where id_cust= :id&quot;);</span>
+<span class="nc" id="L90">           query.setString(&quot;id&quot;, idC);</span>
+<span class="nc" id="L91">           cus = (TblCust) query.uniqueResult();</span>
+<span class="nc" id="L92">           iCus = query.list();</span>
+<span class="nc" id="L93">           trans.commit();</span>
+<span class="nc" id="L94">       } catch (Exception e){</span>
+<span class="nc" id="L95">           System.out.println(e);</span>
+<span class="nc" id="L96">       }</span>
+<span class="nc" id="L97">       return iCus;</span>
+   }
+   
+   public void deleteCustomer(Integer idC)
+   {
+<span class="fc" id="L102">       Transaction trans = null;</span>
+<span class="fc" id="L103">       Session session = coffeeshopUtil.getSessionFactory().openSession();</span>
+       
+       try{
+<span class="fc" id="L106">           trans = session.beginTransaction();</span>
+<span class="fc" id="L107">           TblCust cus = (TblCust) session.load(TblCust.class, new Integer(idC));</span>
+<span class="nc" id="L108">           session.delete(cus);</span>
+<span class="nc" id="L109">           trans.commit();</span>
+<span class="fc" id="L110">       }catch (Exception e){</span>
+<span class="fc" id="L111">           System.out.println(e);</span>
+<span class="nc" id="L112">       }</span>
+<span class="fc" id="L113">   }</span>
+   
+   public void editCustomer(TblCust cus)
+   {
+<span class="nc" id="L117">       Transaction trans = null;</span>
+<span class="nc" id="L118">       Session session = coffeeshopUtil.getSessionFactory().openSession();</span>
+       
+       try{
+<span class="nc" id="L121">           trans = session.beginTransaction();</span>
+<span class="nc" id="L122">           session.update(cus);</span>
+<span class="nc" id="L123">           trans.commit();</span>
+<span class="nc" id="L124">       } catch (Exception e){</span>
+<span class="nc" id="L125">           System.out.println(e);</span>
+<span class="nc" id="L126">       }</span>
+<span class="nc" id="L127">   }</span>
+   
+   public void resetCustomer(TblCust cus)
+   {
+<span class="nc" id="L131">       Transaction trans = null;</span>
+<span class="nc" id="L132">       Session session = coffeeshopUtil.getSessionFactory().openSession();</span>
+       
+       try{
+<span class="nc" id="L135">           trans = session.beginTransaction();</span>
+<span class="nc" id="L136">           session.clear();</span>
+<span class="nc" id="L137">           trans.commit();</span>
+<span class="nc" id="L138">       }catch(Exception e){</span>
+<span class="nc" id="L139">           System.out.println(e);</span>
+<span class="nc" id="L140">       }</span>
+<span class="nc" id="L141">   }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

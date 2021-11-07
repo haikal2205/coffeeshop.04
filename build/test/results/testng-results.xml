@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="43" passed="43">
+  <reporter-output>
+  </reporter-output>
+  <suite name="coffeeshop.04" duration-ms="2454" started-at="2021-11-06T08:03:54Z" finished-at="2021-11-06T08:03:57Z">
+    <groups>
+    </groups>
+    <test name="pojo.TblCustTest" duration-ms="2182" started-at="2021-11-06T08:03:54Z" finished-at="2021-11-06T08:03:56Z">
+      <class name="pojo.TblCustTest">
+        <test-method status="PASS" signature="testGetEmail()[pri:0, instance:testGetEmail(pojo.TblCustTest)]" name="testGetEmail" duration-ms="10" started-at="2021-11-06T15:03:54Z" finished-at="2021-11-06T15:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEmail -->
+        <test-method status="PASS" signature="testGetIdCustomer()[pri:0, instance:testGetIdCustomer(pojo.TblCustTest)]" name="testGetIdCustomer" duration-ms="4" started-at="2021-11-06T15:03:54Z" finished-at="2021-11-06T15:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetIdCustomer -->
+        <test-method status="PASS" signature="testSetNameCust()[pri:0, instance:testSetNameCust(pojo.TblCustTest)]" name="testSetNameCust" duration-ms="0" started-at="2021-11-06T15:03:54Z" finished-at="2021-11-06T15:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetNameCust -->
+        <test-method status="PASS" signature="testGetAllRecoordss()[pri:0, instance:testGetAllRecoordss(pojo.TblCustTest)]" name="testGetAllRecoordss" duration-ms="2007" started-at="2021-11-06T15:03:54Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllRecoordss -->
+        <test-method status="PASS" signature="testSetIdCustomer()[pri:0, instance:testSetIdCustomer(pojo.TblCustTest)]" name="testSetIdCustomer" duration-ms="0" started-at="2021-11-06T15:03:54Z" finished-at="2021-11-06T15:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetIdCustomer -->
+        <test-method status="PASS" signature="testGetNameCust()[pri:0, instance:testGetNameCust(pojo.TblCustTest)]" name="testGetNameCust" duration-ms="0" started-at="2021-11-06T15:03:54Z" finished-at="2021-11-06T15:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNameCust -->
+        <test-method status="PASS" signature="testGetBook()[pri:0, instance:testGetBook(pojo.TblCustTest)]" name="testGetBook" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBook -->
+        <test-method status="PASS" signature="testSetNoTlpn()[pri:0, instance:testSetNoTlpn(pojo.TblCustTest)]" name="testSetNoTlpn" duration-ms="1" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetNoTlpn -->
+        <test-method status="PASS" signature="testGetByIdcus()[pri:0, instance:testGetByIdcus(pojo.TblCustTest)]" name="testGetByIdcus" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetByIdcus -->
+        <test-method status="PASS" signature="testGetNoTlpn()[pri:0, instance:testGetNoTlpn(pojo.TblCustTest)]" name="testGetNoTlpn" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNoTlpn -->
+        <test-method status="PASS" signature="testDeleteea()[pri:0, instance:testDeleteea(pojo.TblCustTest)]" name="testDeleteea" duration-ms="21" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteea -->
+        <test-method status="PASS" signature="testSetEmail()[pri:0, instance:testSetEmail(pojo.TblCustTest)]" name="testSetEmail" duration-ms="1" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetEmail -->
+        <test-method status="PASS" signature="testSetBook()[pri:0, instance:testSetBook(pojo.TblCustTest)]" name="testSetBook" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetBook -->
+      </class> <!-- pojo.TblCustTest -->
+    </test> <!-- pojo.TblCustTest -->
+    <test name="pojo.TblUser1Test" duration-ms="92" started-at="2021-11-06T08:03:56Z" finished-at="2021-11-06T08:03:56Z">
+      <class name="pojo.TblUser1Test">
+        <test-method status="PASS" signature="testSetPassword()[pri:0, instance:testSetPassword(pojo.TblUser1Test)]" name="testSetPassword" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetPassword -->
+        <test-method status="PASS" signature="testGetPassword()[pri:0, instance:testGetPassword(pojo.TblUser1Test)]" name="testGetPassword" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPassword -->
+        <test-method status="PASS" signature="testSave_user()[pri:0, instance:testSave_user(pojo.TblUser1Test)]" name="testSave_user" duration-ms="21" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSave_user -->
+        <test-method status="PASS" signature="testGetEmail()[pri:0, instance:testGetEmail(pojo.TblUser1Test)]" name="testGetEmail" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEmail -->
+        <test-method status="PASS" signature="testSetUsername()[pri:0, instance:testSetUsername(pojo.TblUser1Test)]" name="testSetUsername" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUsername -->
+        <test-method status="PASS" signature="testSetIdUser()[pri:0, instance:testSetIdUser(pojo.TblUser1Test)]" name="testSetIdUser" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetIdUser -->
+        <test-method status="PASS" signature="testGetUsername()[pri:0, instance:testGetUsername(pojo.TblUser1Test)]" name="testGetUsername" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsername -->
+        <test-method status="PASS" signature="testGetIdUser()[pri:0, instance:testGetIdUser(pojo.TblUser1Test)]" name="testGetIdUser" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetIdUser -->
+        <test-method status="PASS" signature="testLog_us()[pri:0, instance:testLog_us(pojo.TblUser1Test)]" name="testLog_us" duration-ms="22" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLog_us -->
+        <test-method status="PASS" signature="testLogin_user()[pri:0, instance:testLogin_user(pojo.TblUser1Test)]" name="testLogin_user" duration-ms="21" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin_user -->
+        <test-method status="PASS" signature="testSetEmail()[pri:0, instance:testSetEmail(pojo.TblUser1Test)]" name="testSetEmail" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetEmail -->
+      </class> <!-- pojo.TblUser1Test -->
+    </test> <!-- pojo.TblUser1Test -->
+    <test name="pojo.TblUser2Test" duration-ms="107" started-at="2021-11-06T08:03:56Z" finished-at="2021-11-06T08:03:57Z">
+      <class name="pojo.TblUser2Test">
+        <test-method status="PASS" signature="testSetPassword()[pri:0, instance:testSetPassword(pojo.TblUser2Test)]" name="testSetPassword" duration-ms="1" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetPassword -->
+        <test-method status="PASS" signature="testGetPassword()[pri:0, instance:testGetPassword(pojo.TblUser2Test)]" name="testGetPassword" duration-ms="1" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPassword -->
+        <test-method status="PASS" signature="testGetEmail()[pri:0, instance:testGetEmail(pojo.TblUser2Test)]" name="testGetEmail" duration-ms="0" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetEmail -->
+        <test-method status="PASS" signature="testSave_user()[pri:0, instance:testSave_user(pojo.TblUser2Test)]" name="testSave_user" duration-ms="21" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSave_user -->
+        <test-method status="PASS" signature="testSetIdUser()[pri:0, instance:testSetIdUser(pojo.TblUser2Test)]" name="testSetIdUser" duration-ms="1" started-at="2021-11-06T15:03:56Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetIdUser -->
+        <test-method status="PASS" signature="testSetUsername()[pri:0, instance:testSetUsername(pojo.TblUser2Test)]" name="testSetUsername" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUsername -->
+        <test-method status="PASS" signature="testGetUsername()[pri:0, instance:testGetUsername(pojo.TblUser2Test)]" name="testGetUsername" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsername -->
+        <test-method status="PASS" signature="testLog_us()[pri:0, instance:testLog_us(pojo.TblUser2Test)]" name="testLog_us" duration-ms="13" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLog_us -->
+        <test-method status="PASS" signature="testGetIdUser()[pri:0, instance:testGetIdUser(pojo.TblUser2Test)]" name="testGetIdUser" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetIdUser -->
+        <test-method status="PASS" signature="testLogin_user()[pri:0, instance:testLogin_user(pojo.TblUser2Test)]" name="testLogin_user" duration-ms="14" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin_user -->
+        <test-method status="PASS" signature="testSetEmail()[pri:0, instance:testSetEmail(pojo.TblUser2Test)]" name="testSetEmail" duration-ms="53" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetEmail -->
+      </class> <!-- pojo.TblUser2Test -->
+    </test> <!-- pojo.TblUser2Test -->
+    <test name="pojo.TblUserTest" duration-ms="30" started-at="2021-11-06T08:03:57Z" finished-at="2021-11-06T08:03:57Z">
+      <class name="pojo.TblUserTest">
+        <test-method status="PASS" signature="testSetPassword()[pri:0, instance:testSetPassword(pojo.TblUserTest)]" name="testSetPassword" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetPassword -->
+        <test-method status="PASS" signature="testGetPassword()[pri:0, instance:testGetPassword(pojo.TblUserTest)]" name="testGetPassword" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPassword -->
+        <test-method status="PASS" signature="testSetIdUser()[pri:0, instance:testSetIdUser(pojo.TblUserTest)]" name="testSetIdUser" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetIdUser -->
+        <test-method status="PASS" signature="testGetByIdus()[pri:0, instance:testGetByIdus(pojo.TblUserTest)]" name="testGetByIdus" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetByIdus -->
+        <test-method status="PASS" signature="testGetUsername()[pri:0, instance:testGetUsername(pojo.TblUserTest)]" name="testGetUsername" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsername -->
+        <test-method status="PASS" signature="testSetUsername()[pri:0, instance:testSetUsername(pojo.TblUserTest)]" name="testSetUsername" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUsername -->
+        <test-method status="PASS" signature="testLogin_user()[pri:0, instance:testLogin_user(pojo.TblUserTest)]" name="testLogin_user" duration-ms="26" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin_user -->
+        <test-method status="PASS" signature="testGetIdUser()[pri:0, instance:testGetIdUser(pojo.TblUserTest)]" name="testGetIdUser" duration-ms="0" started-at="2021-11-06T15:03:57Z" finished-at="2021-11-06T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetIdUser -->
+      </class> <!-- pojo.TblUserTest -->
+    </test> <!-- pojo.TblUserTest -->
+  </suite> <!-- coffeeshop.04 -->
+</testng-results>
