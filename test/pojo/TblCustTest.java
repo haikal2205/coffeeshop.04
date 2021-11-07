@@ -52,10 +52,7 @@ public class TblCustTest {
         instance.setNameCust(expResult);
         String result = instance.getNameCust();
         assertEquals(expResult, result);
-    }
-        
-        
-       
+    }   
     /**
      * Test of setNameCust method, of class TblCust.
      */
@@ -67,7 +64,6 @@ public class TblCustTest {
         TblCust instance = new TblCust();
         instance.setNameCust(nameCust);
     }
-
     /**
      * Test of getEmail method, of class TblCust.
      */
@@ -81,7 +77,6 @@ public class TblCustTest {
         String result = instance.getNameCust();
         assertEquals(expResult, result);
     }
-
     /**
      * Test of setEmail method, of class TblCust.
      */
@@ -93,7 +88,6 @@ public class TblCustTest {
         TblCust instance = new TblCust();
         instance.setEmail(email);
     }
-
     /**
      * Test of getNoTlpn method, of class TblCust.
      */
@@ -107,7 +101,6 @@ public class TblCustTest {
         String result = instance.getNoTlpn();
         assertEquals(expResult, result);
     }
-
     /**
      * Test of setNoTlpn method, of class TblCust.
      */
@@ -119,7 +112,6 @@ public class TblCustTest {
         TblCust instance = new TblCust();
         instance.setNoTlpn(noTlpn);
     }
-
     /**
      * Test of getBook method, of class TblCust.
      */
@@ -133,7 +125,6 @@ public class TblCustTest {
         String result = instance.getBook();
         assertEquals(expResult, result);
     }
-
     /**
      * Test of setBook method, of class TblCust.
      */
@@ -145,9 +136,6 @@ public class TblCustTest {
         TblCust instance = new TblCust();
         instance.setBook(book);
     }
-
-    
-
     /**
      * Test of getAllRecoordss method, of class TblCust.
      */
@@ -160,7 +148,6 @@ public class TblCustTest {
         List<TblCust> result = instance.getAllRecoordss();
         assertEquals(expResult, result.toArray().length);
     }
-
     /**
      * Test of getByIdcus method, of class TblCust.
      */
@@ -175,9 +162,6 @@ public class TblCustTest {
         Integer result = instance.getIdCustomer();
         assertEquals(expResult, result); 
     }
-
-    
-
     /**
      * Test of deleteea method, of class TblCust.
      */
@@ -191,9 +175,6 @@ public class TblCustTest {
         String expResult = "form_minuman";
         instance.deleteea();
     }
-
-    
-
     /**
      * Test of getIdCustomer method, of class TblCust.
      */
@@ -209,7 +190,6 @@ public class TblCustTest {
         assertEquals(expResult, result);
         assertThat(expResult, is(notNullValue()));
     }
-
     /**
      * Test of setIdCustomer method, of class TblCust.
      */

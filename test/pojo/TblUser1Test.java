@@ -106,7 +106,6 @@ public class TblUser1Test {
         System.out.println(result);
         assertEquals(expResult, result);
     }
-
     /**
      * Test of log_us method, of class TblUser1.
      */
@@ -124,8 +123,6 @@ public class TblUser1Test {
         System.out.println(result);
         assertEquals(expResult, result);
     }
-
-    
     /**
      * Test of getIdUser method, of class TblUser1.
      */
@@ -137,7 +134,6 @@ public class TblUser1Test {
         Integer result = instance.getIdUser();
         assertEquals(expResult, result);
     }
-
     /**
      * Test of setIdUser method, of class TblUser1.
      */
@@ -148,7 +144,6 @@ public class TblUser1Test {
         TblUser1 instance = new TblUser1();
         instance.setIdUser(idUser);
     }
-
     /**
      * Test of getPassword method, of class TblUser1.
      */
@@ -163,7 +158,6 @@ public class TblUser1Test {
         assertEquals(expResult, result);
         assertThat(expResult, is(notNullValue()));
     }
-
     /**
      * Test of setPassword method, of class TblUser1.
      */
@@ -175,7 +169,6 @@ public class TblUser1Test {
         TblUser1 instance = new TblUser1();
         instance.setPassword(password);
     }
-
     /**
      * Test of getUsername method, of class TblUser1.
      */

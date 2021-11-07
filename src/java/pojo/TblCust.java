@@ -59,7 +59,7 @@ public class TblCust  implements java.io.Serializable {
     {
         DAOCustomer adddd = new DAOCustomer();
         adddd.add_product(this);
-        return "index";
+        return "rumah";
     }
     
     

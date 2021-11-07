@@ -54,10 +54,8 @@ public class TblUserTest {
         String result = instance.login_user();
         System.out.println(expResult);
         System.out.println(result);
-        assertEquals(expResult, result);
-       
+        assertEquals(expResult, result);  
     }
-
     /**
      * Test of getByIdus method, of class TblUser.
      */
@@ -70,9 +68,7 @@ public class TblUserTest {
         Integer result = instance.getIdUser();
         assertEquals(expResult, result);
          assertThat(expResult, is(notNullValue()));
-     
     }
-  
     /**
      * Test of getIdUser method, of class TblUser.
      */
@@ -86,7 +82,6 @@ public class TblUserTest {
         assertEquals(expResult, result);
          assertThat(expResult, is(notNullValue()));
     }
-
     /**
      * Test of setIdUser method, of class TblUser.
      */
@@ -98,7 +93,6 @@ public class TblUserTest {
         TblUser instance = new TblUser();
         instance.setIdUser(idUser);
     }
-
     /**
      * Test of getPassword method, of class TblUser.
      */
@@ -113,7 +107,6 @@ public class TblUserTest {
         assertEquals(expResult, result);
         assertThat(expResult, is(notNullValue()));
     }
-
     /**
      * Test of setPassword method, of class TblUser.
      */
@@ -125,7 +118,6 @@ public class TblUserTest {
         TblUser instance = new TblUser();
         instance.setPassword(password);
     }
-
     /**
      * Test of getUsername method, of class TblUser.
      */
@@ -140,7 +132,6 @@ public class TblUserTest {
         String result = instance.getUsername();
         assertEquals(expResult, result); 
     }
-
     /**
      * Test of setUsername method, of class TblUser.
      */
@@ -152,5 +143,4 @@ public class TblUserTest {
         TblUser instance = new TblUser();
         instance.setUsername(username);;
     }
-    
 }

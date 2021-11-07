@@ -53,7 +53,6 @@ public class TblUser2Test {
         String result = instance.getEmail();
         assertEquals(expResult, result); 
     }
-
     /**
      * Test of setEmail method, of class TblUser2.
      */
@@ -65,7 +64,6 @@ public class TblUser2Test {
         TblUser2 instance = new TblUser2();
         instance.setEmail(email);
     }
-
     /**
      * Test of save_user method, of class TblUser2.
      */
@@ -87,7 +85,6 @@ public class TblUser2Test {
         System.out.println(result);
         assertEquals(expResult, result);
     }
-
     /**
      * Test of login_user method, of class TblUser2.
      */
@@ -105,7 +102,6 @@ public class TblUser2Test {
         System.out.println(result);
         assertEquals(expResult, result);
     }
-
     /**
      * Test of log_us method, of class TblUser2.
      */
@@ -123,8 +119,6 @@ public class TblUser2Test {
         System.out.println(result);
         assertEquals(expResult, result);
     }
-
-    
     /**
      * Test of getIdUser method, of class TblUser2.
      */
@@ -136,7 +130,6 @@ public class TblUser2Test {
         Integer result = instance.getIdUser();
         assertEquals(expResult, result);
     }
-
     /**
      * Test of setIdUser method, of class TblUser2.
      */
@@ -147,7 +140,6 @@ public class TblUser2Test {
         TblUser2 instance = new TblUser2();
         instance.setIdUser(idUser);
     }
-
     /**
      * Test of getPassword method, of class TblUser2.
      */
@@ -162,7 +154,6 @@ public class TblUser2Test {
         assertEquals(expResult, result);
         assertThat(expResult, is(notNullValue()));
     }
-
     /**
      * Test of setPassword method, of class TblUser2.
      */
@@ -174,7 +165,6 @@ public class TblUser2Test {
         TblUser2 instance = new TblUser2();
         instance.setPassword(password);
     }
-
     /**
      * Test of getUsername method, of class TblUser2.
      */
@@ -189,7 +179,6 @@ public class TblUser2Test {
         String result = instance.getUsername();
         assertEquals(expResult, result); 
     }
-
     /**
      * Test of setUsername method, of class TblUser2.
      */
